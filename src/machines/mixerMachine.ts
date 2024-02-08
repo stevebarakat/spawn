@@ -37,7 +37,6 @@ export const mixerMachine = createMachine({
               },
             })
           ),
-        newTrackName: "",
       }),
     },
     "TRACK.REMOVE": {
