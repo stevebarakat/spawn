@@ -6,7 +6,6 @@ const makeId = () => Math.random().toString(36).substring(7);
 export const mixerMachine = createMachine({
   types: {} as {
     context: {
-      newTrackName: string;
       tracks: ActorRefFrom<typeof trackMachine>[];
     };
     events:
@@ -21,7 +20,6 @@ export const mixerMachine = createMachine({
   },
   id: "tracks",
   context: {
-    newTrackName: "",
     tracks: [],
   },
   on: {

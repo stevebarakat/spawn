@@ -5,8 +5,6 @@ import Track from "./Track";
 function Mixer() {
   const [state, send] = useMachine(mixerMachine);
 
-  console.log("context", state.context);
-
   return (
     <div className="app">
       <h2>Tracks</h2>
